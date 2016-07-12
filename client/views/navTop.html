@@ -1,0 +1,21 @@
+<template name="navTop">
+    <nav class="nav-top blue lighten-2" id="nav-top">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo">Book<b>Look</b></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a data-scroll href="#main" class="navmenu">Main</a></li>
+                <li><a data-scroll href="#about" class="navmenu">About</a></li>
+                <li><a data-scroll href="#contact" class="navmenu">Contact</a></li>
+                <li><a href="#" class="navmenu login-btn">{{inOrOut}}</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="side-nav">
+                <li><a data-scroll href="#main">Main</a></li>
+                <li><a data-scroll href="#about">About</a></li>
+                <li><a data-scroll href="#contact">Contact</a></li>
+                <li><a href="#" class="login-btn">Login</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse hitam"><i class="mdi-action-view-carousel"></i></a>
+        </div>
+    </nav>
+</template>

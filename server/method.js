@@ -8,7 +8,4 @@ Meteor.methods({
     removeAllUserDetail: function(){
         UserDetail.remove({});
     },
-    removeAllLocations: function(){
-        Locations.remove({});
-    }
-});
+   
