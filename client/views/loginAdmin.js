@@ -11,6 +11,3 @@ Template.loginAdmin.events({
         //Session.set('adminTF', true);
         //Router.go('/admin');
         //
-        if (cek>0){
-            Session.set('adminTF', true);
-            Router.go('/admin');
