@@ -8,6 +8,3 @@ Template.loginAdmin.events({
         var cek = AdminUser.find({email: email}).count();
         console.log(cek);
 
-        //Session.set('adminTF', true);
-        //Router.go('/admin');
-        //
