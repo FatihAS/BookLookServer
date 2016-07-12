@@ -1,0 +1,66 @@
+<template name="daftar_user">
+    <div class="container left-margin-content">
+        <div class="row" style="margin-right: 182px;">
+            <div class="col s12 m12 l12 blue lighten-2">
+                <h5 style="color: white; margin-left: 16px">Daftar User</h5>
+            </div>
+            <div class="col s12 m12 l12">
+                <div class="row">
+                    <table class="striped">
+                        <thead>
+                        <tr>
+                            <th data-field="username">Username</th>
+                            <th data-field="email">Email</th>
+                            <th data-field="pass">Password</th>
+                            <th data-field="date">Tanggal Daftar</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                            {{#each userList}}
+                                {{>userRow}}
+                            {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Modal Structure -->
+            <div id="modalDetail" class="modal bottom-sheet">
+                <div class="modal-content">
+                    <h4>Daftar buku {{userData.username}}</h4>
+                    {{#each userBooks}}
+                        {{>userBookImg}}
+                    {{/each}}
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="userBookImg">
+    <div class="row">
+        <div class="col s12 m12 l13">
+            <div class="row">
+                <div class="col s12 m12 l12"><h12 style="text-align: center !important;">{{title}}</h12></div>
+                <div class="col s12 m12 l12"><img src="data:image/png;base64,{{img_book}}"/></div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="userRow">
+    <tr>
+        <td>{{username}}</td>
+        <td>{{email}}</td>
+        <td>{{password}}</td>
+        <td>{{date}}</td>
+        <td>
+            <a class="waves-effect waves-light btn modal-trigger detail" href="#modalDetail">Detail</a>
+            <a class="waves-effect waves-light btn red lighten-1 delete">Hapus</a>
+        </td>
+    </tr>
+</template>

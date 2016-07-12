@@ -1,0 +1,114 @@
+/* CSS declarations go here */
+nav ul a{
+    color: #fff !important;
+}
+.white{
+    color: #fff !important;
+}
+.contact .col
+{
+    margin-bottom: 14px;
+}
+
+.contact h5
+{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.contact h6
+{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.contact hr
+{
+    width: 40px;
+    margin-bottom: 20px;
+}
+
+.contact .contact-holder
+{
+    padding-left: 40px;
+    text-align: left;
+}
+
+.contact .contact-holder h6
+{
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.contact .contact-holder p
+{
+    margin-bottom: 20px;
+}
+
+#logo{
+    width: 40%;
+    height: auto;
+}
+
+.logo-content{
+    width: 58%;
+    margin-top: 4%;
+}
+
+.custom-carousel{
+    height: 580px;
+    margin-top: -11%;
+}
+.text-center{
+    text-align: center;
+}
+#logoIconLogin{
+    width: 100%;
+    padding: 12%;
+}
+#nav-top{
+    position: fixed !important;
+    z-index: 10 !important;;
+}
+.z-index{
+    z-index: 20 !important;;
+}
+.padding6{
+    padding-top: 6%;
+}
+#playIcon{
+    width: 25%;
+}
+.loginAdmin{
+    background: transparent url("/images/bg.jpg") repeat scroll 0% 0%;
+    height: 700px;
+}
+.card-custom{
+    padding-bottom: 8%;
+    padding-top: 2%;
+}
+.side-nav-custom img{
+    padding: 10px;
+}
+.left-margin-content{
+    margin-left: 240px;
+    margin-right: 240px;
+    width: 100%;
+}
+.jumlah-user h1{
+    text-align: center !important;
+    font-size: 12.4rem !important;
+    margin: 9% 0% 0% 0%;
+    color: white;
+}
+.jumlah-user h5{
+    color: white;
+    text-align: center;
+}
+.map-container {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}

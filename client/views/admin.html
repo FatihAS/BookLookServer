@@ -1,0 +1,53 @@
+<template name="admin">
+    <div>
+        <div class="row">
+            <div class="col s12 m5 l3">
+                <div>
+                    <ul style="width: 240px;" id="nav-mobile" class="side-nav fixed">
+                        <li class="bold"><a href="#" class="waves-effect waves-teal admin-utama">Home</a></li>
+                        <li class="bold"><a href="#" class="waves-effect waves-teal daftar-user">Daftar User</a></li>
+                        <li class="bold"><a href="#" class="waves-effect waves-teal logout">Log Out</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s12 m12 l9" style="width: 100%">
+                <!-- Teal page content  -->
+                {{#if showDaftarUser}}
+                    {{>daftar_user}}
+                {{else}}
+                    {{>admin_main}}
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</template>
+<template name="admin_main" >
+    <div class="container left-margin-content">
+        <div class="row" style="margin-right: 182px;">
+            <div class="col s12 m12 l12 blue lighten-2">
+                <h5 style="color: white; margin-left: 16px">Admin Control</h5>
+            </div>
+            <div class="col s12 m12 l12">
+                <div class="row">
+                    <div class="col s12 m12 l8">
+                        <div class="card medium">
+                            <div class="map-container">
+                                {{> googleMap name="exampleMap" options=exampleMapOptions}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m12 l4">
+                        <div class="card small blue lighten-2">
+                            <a href="#" class="jumlah-user">
+                                <div class="row">
+                                    <div class="col s12 m12 l12"><h1>{{jumlahUsers}}</h1></div>
+                                    <div class="col s12 m12 l12"><h5>User aktif</h5></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
