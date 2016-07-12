@@ -17,7 +17,3 @@ Template.loginAdmin.events({
         }
         else{
             Session.set('adminTF', false);
-            Session.set('adminEmailSess', null);
-        }
-    }
-});
