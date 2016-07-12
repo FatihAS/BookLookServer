@@ -5,6 +5,3 @@ Template.loginAdmin.events({
         var pass = tmpl.find('#password').value;
         Session.set('adminEmailSess', email);
         console.log(Session.get('adminEmailSess'));
-        var cek = AdminUser.find({email: email}).count();
-        console.log(cek);
-
