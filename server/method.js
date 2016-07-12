@@ -5,7 +5,4 @@ Meteor.methods({
     removeAllUserBooks: function(){
         UserBooks.remove({});
     },
-    removeAllUserDetail: function(){
-        UserDetail.remove({});
-    },
    
